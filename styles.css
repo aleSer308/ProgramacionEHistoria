@@ -1,0 +1,103 @@
+:root{
+    --cr-fondo-color: rgb(24,28, 48);
+    --cr-crem_beige-color: rgb(230, 221, 196);
+    --cr-somYTit_verde_color: rgb(103, 137, 131);/*(Este mismo color es el utilizado en el contorno de los botones de las cards,
+    del video, la botonera de inicio y titulos )*/
+    --cr-recuadro-gris_color: rgb(128, 128, 128);/*este color se repite en sombras de tirulo*/
+    --cr-logo-az-color: rgb(73, 85, 121);
+    --cr-logo-cr-color: rgb(240, 233, 210);
+    --cr-texto-color: rgb(230, 211, 196);
+    --cr-titPrin-color: rgb(238, 238, 238);
+    --cr-sombTitPrin-neg-color: rgb(0, 0, 0);
+}
+* {
+    font-family: 'Monserrat', sans-serif;
+    margin: 0px;
+    padding: 0%;
+}
+/* espacio Nav*/
+nav {
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--cr-fondo-color);
+}
+
+.pantalla {
+    width: 60px;
+    height: 35px;   
+}
+.recuadroIn{
+    width: 50px;
+    height: 25px;
+} 
+.cuadro {
+    background-color: var(--cr-logo-cr-color);
+}
+.colorCuadro{
+    background-color:var(--cr-logo-az-color);
+}
+/* fin de espacio Nav */
+/* estilos header */
+
+header{
+    background-image: url(./imagenes/codigo.jpg);
+    background-size:contain;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+
+    color: var(--cr-titPrin-color);
+}
+/* fin de header */
+/* principio de main tarjetas */
+main {
+    background-color: var(--cr-fondo-color);
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+}
+
+h2 {
+    color: var(--cr-somYTit_verde_color);
+    grid-column: 1/5;
+    text-align: center;
+    size: 40px;
+}
+
+article{
+    width: 350px;
+    height: 400px;
+    background-color: var(--cr-texto-color);
+    border: 5px solid var(--cr-somYTit_verde_color);
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.imgCard{
+    width: 100%;
+
+}
+
+article p,a {
+    text-align: center;
+}
+
+.tarjeta{
+    
+}
+
+.historia  {
+    grid-column: 1/3;
+}
+
+.juego {
+    grid-column: 4/5;
+}
+/* fin del main  */
