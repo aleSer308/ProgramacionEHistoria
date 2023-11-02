@@ -10,6 +10,11 @@
     --cr-titPrin-color: rgb(238, 238, 238);
     --cr-sombTitPrin-neg-color: rgb(0, 0, 0);
 }
+
+.logoTitle{
+    width: 10px !important;
+}
+
 * {
     font-family: 'Monserrat', sans-serif;
     margin: 0px;
@@ -35,12 +40,13 @@ nav {
 }
 
 svg {
-    /* height: 40px; */
     overflow: hidden;
 }
 
 .vinculos {
+    display: flex;
     justify-content: space-between;
+    
 }
 
 .menu {
@@ -48,11 +54,12 @@ svg {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
+    text-transform: uppercase;
     background-color:var(--cr-crem_beige-color);
     color: var(--cr-fondo-color);
     font-weight: 300;
-    padding: 20
-    0px;
+    margin: 0 20px;
+    
 }
 
 /* fin de espacio Nav */
@@ -70,8 +77,8 @@ header{
 }
 
 h1{
-
     color: var(--cr-titPrin-color);
+    font-size: 3em;
 }
 /* fin de header */
 /* principio de main tarjetas */
@@ -83,7 +90,7 @@ h2 {
     padding: 10px;
     color: var(--cr-somYTit_verde_color);
     text-align: center;
-    size: 40px;
+    font-size: 40px;
 }
 
 span {
@@ -91,6 +98,7 @@ span {
 }
 
 .tarjetas{
+    padding: 100px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
