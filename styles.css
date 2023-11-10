@@ -39,6 +39,10 @@ nav {
     margin: 10px;
 }
 
+.fondoCrema {
+    transition: all 0.;
+}
+
 svg {
     overflow: hidden;
 }
@@ -82,10 +86,55 @@ h1{
 }
 /* fin de header */
 /* principio de main tarjetas */
-/* main {
-    ;
+.historias {
+   width: auto;/* agregar ancho */
+    /* agregar altura */
+    padding:40px;
+    display: grid;
+    grid-template-areas: 'tituTex1 tituTex1 txt1'
+                            'txt2 tituTex2 tituTex2' 
+                            'tituTex3  txt3 txt3';
+    
+    gap: 50px;    
+    
+}
 
-} */
+.tituTex1, .tituTex2, .tituTex3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1, .txt2, .txt3 {
+   color: var(--cr-crem_beige-color); 
+}
+
+.tituTex2{
+    grid-area: tituTex2;
+}
+
+.tituTex1 {
+    grid-area: tituTex1 ;
+}
+
+.tituTex3 {
+    grid-area: tituTex3;
+}
+
+
+.txt1 {
+    padding: 10px;
+    grid-area: txt1;
+}
+
+.txt2 {
+    grid-area: txt2;
+    }
+
+.txt3 {
+    grid-area: txt3;
+}
+
 h2 {
     padding: 10px;
     color: var(--cr-somYTit_verde_color);
